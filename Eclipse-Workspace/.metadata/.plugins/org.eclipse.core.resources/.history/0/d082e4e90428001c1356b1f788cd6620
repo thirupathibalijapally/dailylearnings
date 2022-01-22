@@ -1,0 +1,46 @@
+package com.test.algoritm.doublylinkedList;
+
+public class DoublyLinkedList {
+
+	private ListNode head;
+	private ListNode tail;
+	private int length;
+	
+	public DoublyLinkedList() {
+		super();
+		this.head = null;
+		this.tail = null;
+		this.length = 0;
+	}
+
+   public boolean isEmpty() {
+	   return length == 0;
+   	}
+	
+   public int length() {
+	  return length;
+   }   
+   
+   public void  inserAtFirst(int val) {
+	   
+   }
+   
+	private class ListNode{
+		
+		private int data;
+		private ListNode next;		
+		private ListNode previous;
+		public ListNode(int data) {
+			this.data = data;
+		}
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

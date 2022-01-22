@@ -1,0 +1,16 @@
+import java.util.Arrays;
+
+
+
+public class ReducerSamples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Integer array []= {1,2,3,4,5,6,7};
+       
+       Integer sum = Arrays.stream(array).reduce(0, null)
+		
+		
+	}
+
+}

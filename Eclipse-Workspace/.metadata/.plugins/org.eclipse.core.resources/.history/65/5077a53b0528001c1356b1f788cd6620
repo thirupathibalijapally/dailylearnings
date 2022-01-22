@@ -1,0 +1,82 @@
+package com.test.algoritm.doublylinkedList;
+
+public class DoublyLinkedList {
+
+	private ListNode head;
+	private ListNode tail;
+	private int length;
+	
+	public DoublyLinkedList() {
+		super();
+		this.head = null;
+		this.tail = null;
+		this.length = 0;
+	}
+
+   public boolean isEmpty() {
+	   return length == 0;
+   	}
+	
+   public int length() {
+	  return length;
+   }  
+   public void printFromStart() {
+	   
+	   ListNode temp = head;
+	   
+	   while(temp != null) {
+		   
+		   System.out.print(temp.data +"->");
+		   temp= temp.next;
+	   }
+	   System.out.print("null");
+   }
+  public void printFromEnd() {
+	   
+	   ListNode temp = tail;
+	   
+	   while(temp != null) {
+		   
+		   System.out.print(temp.data +"->");
+		   temp= temp.previous;
+	   }
+	   System.out.print("null");
+   }
+   //Insert the values at begining of the linkedlist
+   public void  inserAtFirst(int val) {
+	  ListNode newNode = new ListNode(val);
+	  
+	  if(isEmpty()) {
+		  tail = newNode;
+	  }else {
+		  head.previous = newNode;
+	  }
+	  
+	  newNode.next = head;
+	  head = newNode;
+   }
+   
+	private class ListNode{
+		
+		private int data;
+		private ListNode next;		
+		private ListNode previous;
+		public ListNode(int data) {
+			this.data = data;
+		}
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DoublyLinkedList dl = new DoublyLinkedList();
+		
+		dl.inserAtFirst(10);
+		dl.inserAtFirst(20);
+		dl.inserAtFirst(30);
+		dl.inserAtFirst(40);
+	}
+
+}

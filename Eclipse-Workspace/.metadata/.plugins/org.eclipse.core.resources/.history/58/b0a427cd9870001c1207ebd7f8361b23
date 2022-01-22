@@ -1,0 +1,16 @@
+package com.test.algoritm.seach;
+
+public class LinearSearch {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr[]= {2,4,10,3,5,7,9,0,8};
+		LinearSearch ls= new LinearSearch();
+		System.out.println();
+
+	}
+
+}

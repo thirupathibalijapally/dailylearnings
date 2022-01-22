@@ -1,0 +1,24 @@
+import java.util.Arrays;
+
+
+
+public class ReducerSamples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	// Sum of all integer elements in given array
+       Integer array []= {1,2,3,4,5,6,7};       
+       Integer sum = Arrays.stream(array).reduce(0, (a,b)->a+b);		
+		System.out.println(sum);
+		
+		  Integer sum1 = Arrays.stream(array).reduce(0, Integer::sum);
+		  
+		  System.out.println(sum1);
+		
+		
+		//
+	}
+
+}
